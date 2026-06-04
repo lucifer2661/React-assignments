@@ -1,0 +1,27 @@
+.feature-cards {
+  display: flex;
+  gap: 5.5rem;
+align-items: stretch;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.feature-cards > * {
+  flex: 1;
+}
+
+.placeholder-card {
+  min-height: 300px;
+
+  border-radius: 20px;
+
+  background-color: #e5e7eb;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  color: #4b5563;
+}

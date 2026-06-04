@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;        
+  background-color: white; 
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.book-btn {
+  background-color: #0f172a;
+  color: white;
+
+  padding: 10px 20px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #1e293b;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}

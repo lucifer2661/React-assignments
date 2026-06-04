@@ -1,0 +1,40 @@
+.hero {
+  background-image: 
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('../assets/hero-section-img.avif\ ✅.avif');
+  background-size: cover;
+  background-position: center;
+
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+  border-radius: 16px;
+margin: 10px;
+overflow: hidden;
+margin-top: 70;
+}
+
+.hero button {
+  margin-top: 24px;
+  padding: 14px 28px;
+  background-color: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.hero h1 {
+  max-width: 900px;
+  text-align: center;
+  line-height: 1.2;
+}
+.hero {
+  padding-top: 70px; /* same height as your navbar */
+}

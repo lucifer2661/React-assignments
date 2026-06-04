@@ -1,0 +1,86 @@
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+
+  align-items: center;
+}
+
+.services-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-transform: uppercase;
+}
+
+.services-left h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.explore-btn {
+  width: fit-content;
+
+  padding: 12px 24px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #111827;
+  color: white;
+
+  cursor: pointer;
+}
+
+.services-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #f3f4f6;
+
+  padding: 2rem;
+
+  border-radius: 20px;
+
+  min-height: 250px;
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.arrow-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.arrow-controls button {
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #e5e7eb;
+
+  cursor: pointer;
+}

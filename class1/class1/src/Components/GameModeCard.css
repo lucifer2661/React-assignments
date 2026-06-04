@@ -1,0 +1,77 @@
+.game-card {
+  position: relative;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("../assets/premium_photo-1663045882560-3bdd5f71687c.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Dark overlay */
+.game-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 1;
+}
+
+/* Keep content above overlay */
+
+.toggle {
+  width: 48px;
+  height: 26px;
+  border-radius: 999px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.toggle-thumb {
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.on .toggle-thumb {
+  transform: translateX(22px);
+}
+
+.off .toggle-thumb {
+  transform: translateX(0px);
+}
+.on {
+  background-color: #22c55e; /* green */
+}
+
+.off {
+  background-color: #9ca3af; /* grey */
+}
+
+.game-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-card p {
+  line-height: 1.6;
+  margin: 0;
+}
