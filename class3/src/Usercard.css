@@ -1,0 +1,35 @@
+.user-card {
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 12px 0;
+  max-width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: Arial, sans-serif;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.user-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 6px;
+}
+
+.user-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.user-card p span {
+  font-weight: 600;
+  color: #111827;
+}
