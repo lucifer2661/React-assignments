@@ -4,9 +4,11 @@ import './index.css';
 const Card = ({ user, onDelete }) => {
   return (
     <div className="w-80 bg-slate-900 border border-slate-700 rounded-xl p-5 shadow-lg">
-      <h2 className="text-2xl font-bold text-cyan-400 mb-3">
+      <p className="text-gray-300">
+        <span className="font-semibold text-white">Name:</span>
+        <br />
         {user.userName}
-      </h2>
+      </p>
 
       <p className="text-gray-300">
         <span className="font-semibold text-white">Email:</span>
