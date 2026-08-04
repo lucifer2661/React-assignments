@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { UserDataContext } from "../Context/UserContext";
 
-const Sections = (props) => {
-  console.log(props);
+const Sections = () => {
+  const data = useContext(UserDataContext);
+
   return (
     <div>
-        <h1  className='text-xl'>this is a section</h1>
-        {props.children[0]}
-        {props.children[1]}
-    </div>
-  )
-}
+      <h1 className="text-xl">This is a section</h1>
 
-export default Sections
+      {data.map((user) => (
+        <div key={user.id}>
+          <h2>{user.name}</h2>
+          <p>{user.email}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Sections;
+
